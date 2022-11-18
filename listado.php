@@ -15,7 +15,6 @@
   <?php
 
   include('server/accesoBase.php');
-  include('server/usuarios.php');
   include('server/mostrarListado.php');
 
   ?>

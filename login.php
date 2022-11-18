@@ -1,7 +1,10 @@
 <?php
 
+echo "Inciar sesion";
 
 
+
+/*
 function usuario()
 {
 
@@ -23,7 +26,7 @@ function usuario()
     }
 }
 
-/*
+
 
 
  ["PHP_AUTH_USER"]=>
@@ -32,9 +35,10 @@ function usuario()
   string(1) "a"
 
 
-*/
+
 
 if (isset($_POST)) {
 
     usuario();
 }
+*/

@@ -31,9 +31,15 @@ if($action == 'borrar'){
     exit();
     
 }if($action == 'stock'){
+
     header("Location: ../muevestock.php?id=$id", true, 301);
     exit();
-}
 
+}if($action == "Inciar sesion"){
+
+    header("Location: ../login.php?id=$id", true, 301);
+    exit();
+
+}    
 
 ?>
