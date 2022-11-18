@@ -1,0 +1,139 @@
+html {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(#03dff8, #ffff00);
+}
+
+main {
+    margin-top: 20px;
+}
+
+section,
+header {
+    max-width: 1400px;
+
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+section {
+    margin-top: 20px;
+    
+    margin: auto;
+
+}
+
+
+td , th{
+    text-align: center !important;
+}
+
+
+.td-submits {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-header{
+
+    display: flex ;
+    justify-content:space-between;
+
+
+}
+
+.section-header a{
+
+    margin-top:10px;
+
+}
+
+.col a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.input-group-text{
+    white-space:normal !important;
+    text-align: justify !important;
+}
+
+
+.border{
+    border-width: 10px !important;
+}
+
+.rounded-circle {
+
+
+    width: 96px;
+    margin: 0 10px;
+
+    transition: all 0.3s;
+    transform-origin: 30% 60%;
+
+}
+
+.rounded-circle:hover {
+    transform: scale(1.2) translateY(-15px);
+
+    box-shadow: 5px 5px 10px #606060;
+    margin: 20px 20px 0 20px;
+
+}
+
+.button{
+    width: 100%;
+}
+
+#img1 {
+    max-width: 600px;
+}
+
+#img2 {
+    max-height: 436px;
+    margin:auto;
+}
+
+
+
+
+@media (min-width: 1400px) {
+    #img2 {
+        max-width: 800px;
+    }
+    section {
+        width: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+    section {
+        width: auto;
+        margin: 50px;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    section div {
+        display: flex !important;
+        flex-direction: column !important;
+
+    }
+}
