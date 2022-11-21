@@ -16,6 +16,7 @@
 
   include('server/accesoBase.php');
   include('server/mostrarListado.php');
+  include('server/checkUser.php');
 
   ?>
 
@@ -28,9 +29,9 @@
       <h1>Gestion de productos</h1>
 
       <form method="post" action="listado.php">
-        <input type="submit" class="btn btn-warning" value="Inciar sesion">
+        <a href="" class="btn btn-primary" >Modificar perfil</a>
 
-        <a href="" disabled="disabled" class="btn btn-primary">Resgistrarme (desabilitado)</a>
+        <a href="" disabled="disabled" class="btn btn-danger">Cerrar sesion</a>
       </form>
     </div>
     <form action="server/submitListado.php" method="post">

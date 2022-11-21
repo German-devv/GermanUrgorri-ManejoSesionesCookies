@@ -17,6 +17,6 @@ INSERT INTO `stocks` VALUES (1,1,2),(1,2,1),(2,1,1),(3,2,1),(3,3,2),(4,3,1),(5,1
 
 --tabla usuarios
 
-INSERT INTO `usuarios` VALUES ('administrador','1234',),('cliente','1234',);
+INSERT INTO `usuarios` VALUES ('administrador','1234','German Urgorri','germanurgorri@gmail.com','rojo','arial');
 
 -- Fin Archivo
