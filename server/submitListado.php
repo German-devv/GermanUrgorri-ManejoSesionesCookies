@@ -35,11 +35,11 @@ if($action == 'borrar'){
     header("Location: ../muevestock.php?id=$id", true, 301);
     exit();
 
-}if($action == "Inciar sesion"){
+}if($action == "modificarPerfil"){
 
-    header("Location: ../login.php?id=$id", true, 301);
+    header("Location: ../perfil.php", true, 301);
     exit();
 
-}    
+}   
 
 ?>

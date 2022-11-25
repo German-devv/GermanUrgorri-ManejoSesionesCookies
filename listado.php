@@ -24,17 +24,17 @@
 
 
   <section>
-
+<form action="server/submitListado.php" method="post">
     <div class="section-header">
       <h1>Gestion de productos</h1>
 
-      <form method="post" action="listado.php">
-        <a href="" class="btn btn-primary" >Modificar perfil</a>
+      
+        <input type="submit" name="modificarPerfil" class="btn btn-primary" value="Modificar perfil">
 
-        <a href="" disabled="disabled" class="btn btn-danger">Cerrar sesion</a>
-      </form>
+        <a href="server/cerrarSesion.php" class="btn btn-danger">Cerrar sesion</a>
+      
     </div>
-    <form action="server/submitListado.php" method="post">
+    
       <table class="table table-striped">
         <thead>
           <tr>
