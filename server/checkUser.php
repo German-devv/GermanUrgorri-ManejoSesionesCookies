@@ -31,7 +31,7 @@ function headerSubmit($tittle)
     <section>
     <form action='server/submitListado.php' method='post'>
         <h1>$tittle-";
-
+ 
     nombreCompletoUsuario();
 
     echo "
