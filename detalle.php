@@ -11,10 +11,9 @@
 </head>
 
 <body>
-<?php
-
-include('server/accesoBase.php');
-
+<?php 
+include('server/checkUser.php');
+headerSubmit('Detalles del producto');
 ?>
     <section>
         <?php

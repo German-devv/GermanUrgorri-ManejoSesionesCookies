@@ -12,11 +12,17 @@
 
 <body>
 
-
+    
+        <?php
+        include('server/checkUser.php'); 
+        headerSubmit("Mover Stock de productos");
+        ?>
+    
 
     <?php
 
     include('server/accesoBase.php');
+    
 
     $id = $_GET['id'];
 
@@ -86,7 +92,9 @@
             <form action='server/updateStock.php' method='post'>
                 <section>
 
-                    <h1>Mover Stock de $producto en " . $stock['nombre'] . "</h1>
+                <h1>Mover Stock de $producto en " . $stock['nombre'] . "</h1>
+               
+                    
                     
                         <table class='table table-striped'>
                         

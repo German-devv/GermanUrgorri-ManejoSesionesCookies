@@ -11,14 +11,20 @@
 </head>
 
 <body>
+
+
 <?php
 
 include('server/accesoBase.php');
+include('server/checkUser.php');
 
+headerSubmit('Crear producto');
 ?>
-    <section>
+    
 
-        <h1>Crear producto</h1>
+
+<section>
+        
         <form action="server/crearProducto.php" method="post">
             <table class="table table-striped">
                 <tbody>

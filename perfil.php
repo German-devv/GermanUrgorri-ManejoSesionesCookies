@@ -27,6 +27,7 @@
         $perfil = $perfil->fetch(PDO::FETCH_ASSOC);
 
         print_r($perfil);
+        print_r($_SESSION);
 
 
         echo ("
@@ -57,7 +58,7 @@
                     <td>
                         <div class='input-group mb-3'>
                             <label class='input-group-text' for='clave'>Contraseña:</label>
-                            <input type='clave' value='".$perfil['clave']."' name='text' id='clave' min='0' style='width: 150px;'>
+                            <input type='clave' value='".$perfil['clave']."' name='clave' id='clave' min='0' style='width: 150px;'>
                             <label class='input-group-text' for='clave'>€</label>
                         </div>
                     </td>

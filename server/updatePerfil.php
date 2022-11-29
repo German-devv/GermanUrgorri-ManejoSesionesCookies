@@ -1,6 +1,7 @@
 <?php
 
 include('accesoBase.php');
+include('checkUser.php');
 
 $perfil = [];
 
@@ -17,10 +18,11 @@ if(isset($_POST['colorfondo'])) array_push($perfil,$_POST['colorfondo']);
 if(isset($_POST['tipoletra'])) array_push($perfil,$_POST['tipoletra']);
 
 
+
+
+
+array_push($perfil,$_SESSION['usuario']); 
 print_r($perfil);
-
-//array_push($perfil,$_POST['usuario']); CAMBIAR ESTO
-
 
 
 
@@ -29,6 +31,7 @@ print_r($perfil);
 $insert = $base ->prepare("UPDATE `usuarios` SET usuario=?, clave=?, nombrecompleto=?, correo=?, colorfondo=?, tipoletra=? WHERE usuario=?");
 $insert ->execute($perfil);
 
+$_SESSION['usuario'] = $perfil[0];
 
 header("Location: ../listado.php", true, 301);
 exit();

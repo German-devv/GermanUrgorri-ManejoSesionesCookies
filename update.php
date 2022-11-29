@@ -11,9 +11,14 @@
 </head>
 
 <body>
+
+<?php 
+include('server/checkUser.php');
+headerSubmit('Actualizar producto');
+?>
     <section>
 
-        <h1>Actualizar producto</h1>
+        
         <?php
         
         include('server/accesoBase.php');

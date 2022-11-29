@@ -17,6 +17,7 @@
   include('server/accesoBase.php');
   include('server/mostrarListado.php');
   include('server/checkUser.php');
+  
 
   ?>
 
@@ -26,7 +27,7 @@
   <section>
 <form action="server/submitListado.php" method="post">
     <div class="section-header">
-      <h1>Gestion de productos</h1>
+      <h1>Gestion de productos, <?php nombreCompletoUsuario() ?></h1>
 
       
         <input type="submit" name="modificarPerfil" class="btn btn-primary" value="Modificar perfil">
