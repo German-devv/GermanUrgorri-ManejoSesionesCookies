@@ -16,12 +16,14 @@ function nombreCompletoUsuario()
 {
     include('accesoBase.php');
 
-    $producto = $base->prepare("SELECT nombrecompleto from usuarios WHERE usuario=?");
-    $producto->execute(['administrador']);
-    $producto = $producto->fetch(PDO::FETCH_ASSOC);
+    $nombre = $base->prepare("SELECT nombrecompleto from usuarios WHERE usuario=?");
+    $nombre->execute([$_SESSION['usuario']]);
+    $nombre = $nombre->fetch(PDO::FETCH_ASSOC);
 
+    
 
-    echo $producto['nombrecompleto'];
+    echo $nombre['nombrecompleto'];
+    
 }
 
 
@@ -44,3 +46,24 @@ function headerSubmit($tittle)
     </section>
     ";
 }
+
+function especificacionesUsuario(){
+    include('accesoBase.php');
+    
+    $estilo = $base->prepare("SELECT colorfondo, tipoletra from usuarios WHERE usuario=?");
+    $estilo->execute([$_SESSION['usuario']]);
+    $estilo = $estilo->fetch(PDO::FETCH_ASSOC);
+
+    echo"
+    <style>
+        body{
+            background: linear-gradient(".$estilo['colorfondo'].", #ffff00);
+            font-family: '".$estilo['tipoletra']."';
+        }
+    </style>
+    ";
+
+
+}
+
+especificacionesUsuario();

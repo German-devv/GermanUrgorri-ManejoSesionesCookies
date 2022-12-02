@@ -11,14 +11,16 @@
   <title>Listado</title>
 </head>
 
+
+
 <body>
   <?php
 
   include('server/accesoBase.php');
   include('server/mostrarListado.php');
   include('server/checkUser.php');
+ 
   
-
   ?>
 
 
@@ -60,14 +62,11 @@
 
         </thead>
         <tbody>
-
           <?php
-
+          
           mostrarListado();
 
           ?>
-
-
         </tbody>
       </table>
     </form>
